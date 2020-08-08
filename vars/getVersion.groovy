@@ -1,6 +1,6 @@
-def call (){
+def call (Map config){
     node {
-        if ( 10 < 20){
+        if ( Integer.parseInt(config.message) < 20){
             return 10
         } else{
             return 20
