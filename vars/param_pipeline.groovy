@@ -5,7 +5,7 @@ def call(Map config){
             stage('Windows'){
                 when {
                     expression{
-                        config.OS = 'true'
+                        config.OS == 'true'
                     }
                     
                 }
@@ -16,7 +16,7 @@ def call(Map config){
              stage('Linux'){
                 when {
                     expression{
-                        config.OS = false
+                        config.OS == 'false'
                     }
                     
                 }
