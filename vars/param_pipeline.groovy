@@ -23,7 +23,15 @@ def call(Map config){
                 steps{
                     echo 'Running windows'
                 }
-            }           
+            }
+
+            stage('Always'){
+ 
+                steps{
+                    echo "Printing ${config.OS}"
+                }
+            } 
+
 
         }
     }
