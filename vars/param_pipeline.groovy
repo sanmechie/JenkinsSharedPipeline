@@ -16,7 +16,7 @@ def call(Map config){
              stage('Linux'){
                 when {
                     expression{
-                        config.OS = 'false'
+                        config.OS = false
                     }
                     
                 }
